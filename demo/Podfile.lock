@@ -1,12 +1,16 @@
 PODS:
-  - SwiftPriorityQueue (1.1.2)
+  - SwiftPriorityQueue (1.3.1)
 
 DEPENDENCIES:
-  - SwiftPriorityQueue (~> 1.1.2)
+  - SwiftPriorityQueue
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftPriorityQueue
 
 SPEC CHECKSUMS:
-  SwiftPriorityQueue: bafec150153c600a6b9f97b42abe25538745fadb
+  SwiftPriorityQueue: e91ce015fb887a39335c300253b98b727900bc97
 
-PODFILE CHECKSUM: e7603849e959536067cf8be98e9be8f937e101c8
+PODFILE CHECKSUM: c0ccf65eba16c5084eb448a42ea877834dd0a6cc
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.11.3

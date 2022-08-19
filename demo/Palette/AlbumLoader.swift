@@ -32,14 +32,14 @@ struct AlbumLoader {
 				return mainCompletion(nil)
 			}
 
-			guard let entries = (json?["feed"] as? JsonObject)?["entry"] as? [JsonObject], entries.count > 0 else {
+            guard let entries = (json["feed"] as? JsonObject)?["entry"] as? [JsonObject], entries.count > 0 else {
 				print("Failed to detect albums")
 				return mainCompletion(nil)
 			}
 
 			var rank = 0
 
-			let albums: [Album] = entries.flatMap {
+            let albums: [Album] = entries.compactMap {
 				guard let artwork = ($0["im:image"] as? [JsonObject])?.first?["label"] as? String else {
 					return nil
 				}
